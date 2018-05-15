@@ -1,3 +1,4 @@
+// global styles_________________________________
 $purple: #332E56;
 $green: #55CD99;
 $bg-main:#F6F6F8;
@@ -11,7 +12,6 @@ $bg-dk:#D9D7E3;
 	font-weight:300;
 	padding:0;
 	margin:0;
-	// background-color:$bg-main;
 }
 
 h1, h2, h3 {
@@ -109,7 +109,6 @@ a, a:visited, a:hover, a:active {
 // introduction______________________________________________________________________________________________
 .introduction {
 	background-color: rgba(50,0,0,.2);
-	// background-color: yellow;
 }
 // team______________________________________________________________________________________________
 .team {
@@ -128,4 +127,33 @@ a, a:visited, a:hover, a:active {
 	background-color: rgba(0,50,0,.2);
 }
 // footer______________________________________________________________________________________________
+.footer {
+	background-color: rgba(0,0,50,.2);
+}
 
+// media queries________________________________________________________________________
+
+// iphone and smaller________________________________
+@media (max-width: 599px) {
+	.hero {
+		background-color:red;
+	}
+
+	.desktop-nav {
+		display:none;
+	}
+}
+
+// from ipad to desktop
+@media (min-width: 600px) {
+	.hero {
+		background-color:cyan;
+	}
+}
+
+// desktop and above_________________________________
+@media (min-width: 1200px) {
+	.hero {
+		background-color:yellow;
+	}
+}

@@ -96,4 +96,20 @@ a, a:visited, a:hover, a:active {
 .contact {
   background-color: rgba(0, 50, 0, 0.2); }
 
+.footer {
+  background-color: rgba(0, 0, 50, 0.2); }
+
+@media (max-width: 599px) {
+  .hero {
+    background-color: red; }
+
+  .desktop-nav {
+    display: none; } }
+@media (min-width: 600px) {
+  .hero {
+    background-color: cyan; } }
+@media (min-width: 1200px) {
+  .hero {
+    background-color: yellow; } }
+
 /*# sourceMappingURL=styles.css.map */
