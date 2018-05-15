@@ -1,0 +1,131 @@
+$purple: #332E56;
+$green: #55CD99;
+$bg-main:#F6F6F8;
+$bg-green:#E3FFF3;
+$bg-lt:#F2F2F7;
+$bg-dk:#D9D7E3;
+
+* {
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	padding:0;
+	margin:0;
+	// background-color:$bg-main;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.button {
+	width: 150px;
+	border: 1px solid $green;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: $green;
+	font-weight: 400;
+	transition: .3s ease;
+	border-radius: 4px;
+}
+
+.button:hover {
+	background-color: $green;
+	color: white;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: $purple;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	justify-content: center;
+}
+
+.column {
+	width: 80%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+// navbar_____________________________________________________________________________________________
+.navbar {
+	height: 75px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid $bg-dk;
+}
+
+.navbar-content {
+	display:flex;
+	justify-content:space-between;
+}
+
+.logo {
+	width:85px;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.nav-item {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.nav-item:last-of-type {
+	margin-right:0;
+	margin-left:30px;
+}
+// hero______________________________________________________________________________________________
+
+.hero {
+	padding:0;
+	background-color: #EEF0F3;
+}
+
+.hero-content {
+	height:100vh;
+	width:100vw;
+}
+
+// introduction______________________________________________________________________________________________
+.introduction {
+	background-color: rgba(50,0,0,.2);
+	// background-color: yellow;
+}
+// team______________________________________________________________________________________________
+.team {
+	background-color: rgba(0,50,0,.2);
+}
+// highlights______________________________________________________________________________________________
+.highlights {
+	background-color: rgba(0,0,50,.2);
+}
+// case studies______________________________________________________________________________________________
+.case_studies {
+	background-color: rgba(50,0,0,.2);
+}
+// contact______________________________________________________________________________________________
+.contact {
+	background-color: rgba(0,50,0,.2);
+}
+// footer______________________________________________________________________________________________
+
