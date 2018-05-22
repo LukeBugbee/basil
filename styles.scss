@@ -16,6 +16,12 @@ $bg-dk:#D9D7E3;
 
 h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
+	color: $purple;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	color: $purple;
 }
 
 .button {
@@ -114,6 +120,13 @@ a, a:visited, a:hover, a:active {
 // team______________________________________________________________________________________________
 .team {
 	background-color: rgba(0,50,0,.2);
+}
+
+.team-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 // highlights______________________________________________________________________________________________
 .highlights {
