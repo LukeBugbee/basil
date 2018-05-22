@@ -7,7 +7,12 @@
   font-size: 15px; }
 
 h1, h2, h3 {
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Roboto Slab', serif;
+  color: #332E56; }
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #332E56; }
 
 .button {
   width: 150px;
@@ -108,6 +113,12 @@ a, a:visited, a:hover, a:active {
 
 .team {
   background-color: rgba(0, 50, 0, 0.2); }
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .highlights {
   background-color: rgba(0, 0, 50, 0.2); }
