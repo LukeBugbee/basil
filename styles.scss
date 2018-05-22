@@ -99,6 +99,7 @@ a, a:visited, a:hover, a:active {
 .hero {
 	padding:0;
 	background-color: #EEF0F3;
+	background-image: url('assets/hero-image.png');
 }
 
 .hero-content {
@@ -154,6 +155,6 @@ a, a:visited, a:hover, a:active {
 // desktop and above_________________________________
 @media (min-width: 1200px) {
 	.hero {
-		background-color:yellow;
+		// background-color:yellow;
 	}
 }
