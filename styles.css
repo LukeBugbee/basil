@@ -3,7 +3,8 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 15px; }
 
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif; }
@@ -24,6 +25,9 @@ h1, h2, h3 {
 .button:hover {
   background-color: #55CD99;
   color: white; }
+
+.btn-dark {
+  padding: 15px; }
 
 a, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -76,11 +80,28 @@ a, a:visited, a:hover, a:active {
 .hero {
   padding: 0;
   background-color: #EEF0F3;
-  background-image: url("assets/hero-image.png"); }
+  background-image: url("assets/hero-image.png");
+  background-size: cover;
+  background-position: center center; }
 
 .hero-content {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  justify-content: center;
+  align-items: center; }
+
+.hero-floating-box {
+  padding: 30px 60px 30px 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 50vw;
+  justify-content: center;
+  vertical-align: center; }
+
+.hero-title {
+  font-size: 50px; }
+
+.hero-copy {
+  max-width: 300px; }
 
 .introduction {
   background-color: rgba(50, 0, 0, 0.2); }
