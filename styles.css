@@ -8,11 +8,16 @@
 
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
-  color: #332E56; }
+  color: #332E56;
+  margin: 20px 0px; }
 
 p {
   font-family: 'Lato', sans-serif;
   color: #332E56; }
+
+img {
+  width: auto;
+  height: auto; }
 
 .button {
   width: 150px;
@@ -122,14 +127,45 @@ a, a:visited, a:hover, a:active {
 .team {
   background-color: rgba(0, 50, 0, 0.2); }
 
-.team-content {
+.team-content, .team-text,
+.team-companies, .team-companies-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .team-content p, .team-text p,
+  .team-companies p, .team-companies-row p {
+    text-align: center; }
+
+.team-companies {
+  margin: 20px; }
+
+.team-companies-row {
+  flex-direction: row; }
+
+.team-company-img {
+  max-height: 40px;
+  max-width: 70px;
+  margin: 10px; }
 
 .highlights {
   background-color: rgba(0, 0, 50, 0.2); }
+
+.highlights-content {
+  flex-direction: column;
+  align-items: center; }
+
+.highlights-all {
+  display: flex;
+  flex-direction: column; }
+
+.highlights-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; }
+  .highlights-block p {
+    text-align: center; }
 
 .case_studies {
   background-color: rgba(50, 0, 0, 0.2); }
@@ -187,7 +223,17 @@ a, a:visited, a:hover, a:active {
     max-width: 50vw;
     height: 60%;
     padding: 30px 60px 30px 60px;
-    background-color: rgba(255, 255, 255, 0.95); } }
+    background-color: rgba(255, 255, 255, 0.95); }
+
+  .highlights-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+@media (min-width: 800px) {
+  .team-company-img {
+    max-height: 80px;
+    max-width: 120px;
+    margin: 40px; } }
 @media (min-width: 1200px) {
   .desktop-nav {
     display: flex; }
