@@ -19,11 +19,11 @@
 		<div class="navbar-content column">
 			<img src="assets/basil-logo.svg" class="logo" alt="basil logo">
 			<div class="nav-menu desktop-nav">
-				<a href="#" class="nav-item">About</a>
-				<a href="#" class="nav-item">Team</a>
-				<a href="#" class="nav-item">Our Work</a>
-				<a href="#" class="nav-item">Contact</a>
-				<a href="https://crazyloveministries.cloverdonations.com/go4/" class="nav-item button donate-button">Donate</a>
+				<a href="#about" class="nav-item">About</a>
+				<a href="#team" class="nav-item">Team</a>
+				<a href="#our-work" class="nav-item">Our Work</a>
+				<a href="#contact" class="nav-item">Contact</a>
+				<a href="https://crazyloveministries.cloverdonations.com/go4/" class="button">Donate</a>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 		</div>
 
 		<!-- introduction -->
-		<div class="intro row">
+		<div class="intro row" id="about">
 			<div class="column intro-content">
 				<div class="intro-image"></div>
 				<div class="intro-text">
@@ -53,7 +53,7 @@
 		</div>
 
 			<!-- team -->
-			<div class="team row">
+			<div class="team row" id="team">
 				<div class="column team-content">
 					<div class="team-text">
 						<h1>Our Team</h1>
@@ -76,7 +76,7 @@
 			</div>
 
 			<!-- highlights (what we do) -->
-			<div class="highlights row">
+			<div class="highlights row" id="our-work">
 				<div class="column highlights-content">
 					<h1>What We Do</h1>
 					<div class="highlights-all">
@@ -118,42 +118,45 @@
 				</div>
 			</div>
 
-		<!-- contact -->
-		<div class="contact row">
-			<div class="column contact-content">
-				<h1>Let's do something awesome together</h1>
-				<div class="contact-form">
-				  <form action="https://formspree.io/hibasillabs@gmail.com" method="POST">
-				    <div class="contact-info-row">
-					    <input type="text" id="name" name="name" placeholder="Name">
-					    <input type="email" id="email" name="email" placeholder="Email">
-				    </div>
-				    <textarea type="message" id="message" name="message" placeholder="Message"></textarea>
-				    <input type="submit" value="Send">
-				  </form>
+			<!-- contact -->
+			<div class="contact row" id="contact">
+				<div class="column contact-content">
+					<h1>Let's do something awesome together</h1>
+					<div class="contact-form">
+					  <form action="https://formspree.io/hibasillabs@gmail.com" method="POST">
+					    <div class="contact-info-row">
+						    <input type="text" id="name" name="name" placeholder="Name">
+						    <input type="email" id="email" name="email" placeholder="Email">
+					    </div>
+					    <textarea type="message" id="message" name="message" placeholder="Message"></textarea>
+					    <input type="submit" value="Send">
+					  </form>
+					</div>
+					<p>Or email us at</p>
+					<a href="mailto:hibasillabs@gmail.com">hibasillabs@gmail.com</a>
 				</div>
-				<p>Or email us at</p>
-				<a href="mailto:hibasillabs@gmail.com">hibasillabs@gmail.com</a>
 			</div>
 
-		<!-- footer -->
-		<div class="footer row">
-			<div class="column footer-content">
-				<div class="footer-contact">
-					<div id="contact-us">Contact us</div>
-					<div>107 Sagamore St.</div>
-					<div>San Francisco, CA 94112</div>
-					<div class="social">
-						<a href="https://www.facebook.com/"><img class="social-icon" src="assets/social-svgs/Facebook.svg"></img></a>
-						<a href="https://www.twitter.com/"><img class="social-icon" src="assets/social-svgs/Twitter.svg"></img></a>
-						<a href="https://www.instagram.com/"><img class="social-icon" src="assets/social-svgs/Instagram.svg"></img></a>
+			<!-- footer -->
+			<div class="footer row">
+				<div class="column footer-content">
+					<div class="footer-contact">
+						<div id="contact-us">Contact us</div>
+						<div>107 Sagamore St.</div>
+						<div>San Francisco, CA 94112</div>
+						<div class="social">
+							<a href="https://www.facebook.com/"><img class="social-icon" src="assets/social-svgs/Facebook.svg"></img></a>
+							<a href="https://www.twitter.com/"><img class="social-icon" src="assets/social-svgs/Twitter.svg"></img></a>
+							<a href="https://www.instagram.com/"><img class="social-icon" src="assets/social-svgs/Instagram.svg"></img></a>
+						</div>
+					</div>
+					<div class="footer-buttons">
+						<a href="https://crazyloveministries.cloverdonations.com/go4/" class="button btn-primary">Donate</a>
+						<button class="button btn-secondary">Join Us</button>
 					</div>
 				</div>
-				<div class="footer-buttons">
-					<a href="https://crazyloveministries.cloverdonations.com/go4/" class="button btn-primary">Donate</a>
-					<button class="button btn-secondary">Join Us</button>
-				</div>
 			</div>
+
 		</div>
 		<script src="scripts.js"></script>
 	</body>
