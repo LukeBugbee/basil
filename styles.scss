@@ -240,7 +240,7 @@ a, a:visited, a:hover, a:active {
 .intro-text {
 	width:45%;
 }
-	
+
 // team______________________________________________________________________________________________
 .team {
 	background-color: $bg-main;
@@ -326,7 +326,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .case_studies-image {
-	width: 100%;	
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -391,6 +391,12 @@ input[type=submit] {
 }
 
 // footer______________________________________________________________________________________________
+
+.footer {
+	background-color: #332E56;
+	padding-top: 50px;
+	padding-bottom: 50px; }
+
 
 .footer .column {
 	justify-content: center;
@@ -621,7 +627,7 @@ input[type=submit] {
 		margin-left:240px;
 
 	}
-	
+
 	// intro_______________
 	.intro {
 		height:80vh;
