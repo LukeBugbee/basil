@@ -258,7 +258,7 @@ a, a:visited, a:hover, a:active {
 .case_studies-text {
 	padding: 100px;
 	text-align: left;
-	width: 50%;
+	width: 100%;
 }
 
 .case_studies-text .btn-dark {
@@ -270,7 +270,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .case_studies-image {
-	width: 50%;	
+	width: 100%;	
 	overflow: hidden;
 }
 
@@ -304,7 +304,7 @@ a, a:visited, a:hover, a:active {
 	flex-direction: column;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -498,9 +498,18 @@ input[type=submit] {
 		justify-content: space-between;
 	}
 
-	input[type=text] {
+	input[type=text], input[type=email] {
 		width: 49%;
   	}
+
+	.case_studies-text {
+		width: 45%;
+	}
+
+	.case_studies-image {
+		width: 55%;
+	}
+
 }
 
 // desktop and above_________________________________
