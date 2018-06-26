@@ -19,6 +19,9 @@ img {
   width: auto;
   height: auto; }
 
+h1 {
+  font-size: 50px; }
+
 .button {
   width: 150px;
   border: 1px solid #55CD99;
@@ -110,6 +113,12 @@ a, a:visited, a:hover, a:active {
   justify-content: flex-end;
   align-items: center; }
 
+.hero {
+  background-image: url("assets/slant.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
 .hero-title {
   font-size: 50px;
   margin-bottom: 60px; }
@@ -124,8 +133,36 @@ a, a:visited, a:hover, a:active {
 .introduction {
   background-color: rgba(50, 0, 0, 0.2); }
 
+.intro-image {
+  background-image: url("assets/intro-image.png");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0px 15px 50px #b8bfc8; }
+
+.intro {
+  height: 80vh;
+  background-color: #F6F6F8;
+  background-image: url("assets/corner-animation.svg");
+  background-position: top right;
+  background-repeat: no-repeat; }
+
+.intro-content {
+  width: 80%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center; }
+
+.intro-image {
+  height: 400px;
+  width: 45%; }
+
+.intro-text {
+  width: 45%; }
+
 .team {
-  background-color: rgba(0, 50, 0, 0.2); }
+  background-color: #F6F6F8; }
 
 .team-content, .team-text,
 .team-companies, .team-companies-row {
@@ -149,7 +186,7 @@ a, a:visited, a:hover, a:active {
   margin: 10px; }
 
 .highlights {
-  background-color: rgba(0, 0, 50, 0.2); }
+  background-color: #F6F6F8; }
 
 .highlights-content {
   flex-direction: column;
@@ -168,13 +205,16 @@ a, a:visited, a:hover, a:active {
     text-align: center; }
 
 .case_studies {
-  background-color: rgba(50, 0, 0, 0.2); }
+  background-color: #F6F6F8;
+  border: 1px solid cyan; }
 
 .contact {
-  background-color: rgba(0, 50, 0, 0.2); }
+  background-color: #F6F6F8;
+  border: 1px solid cyan; }
 
 .footer {
-  background-color: rgba(0, 0, 50, 0.2); }
+  background-color: #F6F6F8;
+  border: 1px solid cyan; }
 
 @media (max-width: 599px) {
   .desktop-nav {
@@ -202,6 +242,17 @@ a, a:visited, a:hover, a:active {
     transform: translateY(30px); }
 
   .btn-dark {
+    width: 90%; }
+
+  .intro-content {
+    flex-direction: column-reverse;
+    width: 95%; }
+
+  .intro-text {
+    padding-left: none;
+    padding-bottom: 60px; }
+
+  .intro-content div {
     width: 90%; } }
 @media (min-width: 600px) {
   .desktop-nav {
@@ -233,10 +284,16 @@ a, a:visited, a:hover, a:active {
   .team-company-img {
     max-height: 80px;
     max-width: 120px;
-    margin: 40px; } }
+    margin: 40px; }
+
+  .intro-content {
+    flex-direction: row; } }
 @media (min-width: 1200px) {
   .desktop-nav {
     display: flex; }
+
+  .hero {
+    justify-content: flex-start; }
 
   .hero-floating-box {
     margin-right: 120px;
@@ -248,6 +305,26 @@ a, a:visited, a:hover, a:active {
     max-width: 50vw;
     height: 60%;
     padding: 30px 60px 30px 60px;
-    background-color: rgba(255, 255, 255, 0.95); } }
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-left: 240px; }
+
+  .intro {
+    height: 80vh;
+    background-image: url("assets/corner-animation.svg");
+    background-position: top right;
+    background-repeat: no-repeat; }
+
+  .intro-content {
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center; }
+
+  .intro-image {
+    height: 400px;
+    width: 45%; }
+
+  .intro-text {
+    width: 45%; } }
 
 /*# sourceMappingURL=styles.css.map */
