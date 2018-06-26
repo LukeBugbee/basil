@@ -9,7 +9,11 @@
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
   color: #332E56;
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  font-size: 50px; }
+
+h3 {
+  font-size: 20px; }
 
 p {
   font-family: 'Lato', sans-serif;
@@ -35,6 +39,14 @@ img {
 .button:hover {
   background-color: #55CD99;
   color: white; }
+
+.btn-primary {
+  background-color: #55CD99;
+  color: #332E56; }
+
+.btn-secondary {
+  background-color: #332E56;
+  color: #55CD99; }
 
 .btn-dark {
   padding: 20px;
@@ -62,7 +74,7 @@ a, a:visited, a:hover, a:active {
 
 .column {
   width: 80%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   display: flex;
   justify-content: space-around; }
 
@@ -124,8 +136,16 @@ a, a:visited, a:hover, a:active {
 .introduction {
   background-color: rgba(50, 0, 0, 0.2); }
 
+.intro-content {
+  display: flex;
+  flex-direction: column; }
+
+.intro-content-text {
+  font-size: 20px;
+  font-weight: 100; }
+
 .team {
-  background-color: rgba(0, 50, 0, 0.2); }
+  background-color: #F6F6F8; }
 
 .team-content, .team-text,
 .team-companies, .team-companies-row {
@@ -149,7 +169,7 @@ a, a:visited, a:hover, a:active {
   margin: 10px; }
 
 .highlights {
-  background-color: rgba(0, 0, 50, 0.2); }
+  background-color: #F6F6F8; }
 
 .highlights-content {
   flex-direction: column;
@@ -164,17 +184,121 @@ a, a:visited, a:hover, a:active {
   flex-direction: column;
   align-items: center;
   margin: 10px; }
+  .highlights-block img {
+    height: 67px; }
   .highlights-block p {
     text-align: center; }
 
 .case_studies {
-  background-color: rgba(50, 0, 0, 0.2); }
+  background-color: #F6F6F8; }
+
+.case_studies-content {
+  flex-direction: column; }
+
+.case_studies .column {
+  width: 100%;
+  max-width: 100%; }
+
+.case_studies-text {
+  padding: 100px;
+  text-align: left; }
+
+.case_studies-text .btn-dark {
+  height: 40px;
+  width: 120px;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px; }
+
+.case_studies-image img {
+  height: 1000px;
+  margin: -200px; }
 
 .contact {
-  background-color: rgba(0, 50, 0, 0.2); }
+  background-color: #F6F6F8; }
+
+.contact-content {
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  .contact-content p {
+    margin: 30px 0px 20px; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contact-info-row {
+  display: flex;
+  flex-direction: column; }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #332E56;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.contact-content textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #332E56;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #332E56;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
 
 .footer {
-  background-color: rgba(0, 0, 50, 0.2); }
+  background-color: #332E56;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.footer .column {
+  justify-content: center; }
+
+.footer-content {
+  display: flex;
+  flex-direction: column; }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #808080; }
+
+.contact-us {
+  margin: 10px; }
+
+.footer-contact div {
+  margin: 5px; }
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer-buttons .button {
+  margin: 10px; }
+
+.social {
+  display: flex;
+  flex-direction: row; }
+
+.social-icon {
+  margin: 6px 10px; }
 
 @media (max-width: 599px) {
   .desktop-nav {
@@ -228,12 +352,37 @@ a, a:visited, a:hover, a:active {
   .highlights-all {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+
+  .contact-form {
+    width: 100%; }
+    .contact-form form {
+      width: 60%; }
+
+  .contact-content textarea {
+    /*width: 60%;*/ }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row; }
+
+  .footer-contact {
+    margin-right: 20px; } }
 @media (min-width: 800px) {
   .team-company-img {
     max-height: 80px;
     max-width: 120px;
-    margin: 40px; } }
+    margin: 40px; }
+
+  .case_studies-content {
+    flex-direction: row; }
+
+  .contact-info-row {
+    flex-direction: row;
+    justify-content: space-between; }
+
+  input[type=text] {
+    width: 49%; } }
 @media (min-width: 1200px) {
   .desktop-nav {
     display: flex; }
@@ -248,6 +397,9 @@ a, a:visited, a:hover, a:active {
     max-width: 50vw;
     height: 60%;
     padding: 30px 60px 30px 60px;
-    background-color: rgba(255, 255, 255, 0.95); } }
+    background-color: rgba(255, 255, 255, 0.95); }
+
+  .intro-content {
+    flex-direction: row; } }
 
 /*# sourceMappingURL=styles.css.map */
