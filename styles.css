@@ -201,7 +201,8 @@ a, a:visited, a:hover, a:active {
 
 .case_studies-text {
   padding: 100px;
-  text-align: left; }
+  text-align: left;
+  width: 50%; }
 
 .case_studies-text .btn-dark {
   height: 40px;
@@ -210,9 +211,13 @@ a, a:visited, a:hover, a:active {
   font-size: 15px;
   margin-top: 20px; }
 
+.case_studies-image {
+  width: 50%;
+  overflow: hidden; }
+
 .case_studies-image img {
-  height: 1000px;
-  margin: -200px; }
+  height: 1200px;
+  margin: -200px -100px -50px -220px; }
 
 .contact {
   background-color: #F6F6F8; }
