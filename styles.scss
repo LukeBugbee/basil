@@ -6,6 +6,7 @@ $bg-main:#F6F6F8;
 $bg-green:#E3FFF3;
 $bg-lt:#F2F2F7;
 $bg-dk:#D9D7E3;
+$shadow:0px 15px 50px rgba(184,191,200,1);
 
 * {
 	box-sizing:border-box;
@@ -35,6 +36,10 @@ p {
 img {
 	width: auto;
 	height: auto;
+}
+
+h1 {
+	font-size:50px;
 }
 
 .button {
@@ -156,6 +161,13 @@ a, a:visited, a:hover, a:active {
 	align-items:center;
 }
 
+.hero {
+	background-image:url('assets/slant.svg');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center bottom
+}
+
 .hero-title {
 	font-size: 50px;
 	margin-bottom:60px;
@@ -175,16 +187,39 @@ a, a:visited, a:hover, a:active {
 	background-color: rgba(50,0,0,.2);
 }
 
+.intro-image {
+	background-image:url('assets/intro-image.png');
+	background-size:cover;
+	background-position:bottom right;
+	background-repeat: no-repeat;
+	border-radius:8px;
+	box-shadow:$shadow;
+}
+
+.intro {
+		height:80vh;
+		background-color:$bg-main;
+		background-image:url('assets/corner-animation.svg');
+		background-position:top right;
+		background-repeat:no-repeat;
+	}
+
 .intro-content {
-	display: flex;
-	flex-direction: column;
+	width:80%;
+	max-width:1200px;
+	justify-content:space-between;
+	align-items:center;
 }
 
-.intro-content-text {
-	font-size: 20px;
-	font-weight: 100;
-
+.intro-image {
+	height:400px;
+	width:45%;
 }
+
+.intro-text {
+	width:45%;
+}
+	
 // team______________________________________________________________________________________________
 .team {
 	background-color: $bg-main;
@@ -335,11 +370,6 @@ input[type=submit] {
 }
 
 // footer______________________________________________________________________________________________
-.footer {
-	background-color: $purple;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
 
 .footer .column {
 	justify-content: center;
@@ -384,11 +414,13 @@ input[type=submit] {
 .social-icon {
 	margin: 6px 10px;
 }
+
 // media queries________________________________________________________________________
 
-// iphone and smaller________________________________
+
+// iphone and smaller~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @media (max-width: 599px) {
-	// navigation____________________________________
+	// navigation__________
 	.desktop-nav {
 		display:none;
 	}
@@ -397,7 +429,7 @@ input[type=submit] {
 		justify-content:center;
 	}
 
-	// hero__________________________________________
+	// hero________
 	.hero {
 		height:90vh;
 	}
@@ -422,15 +454,41 @@ input[type=submit] {
 	.btn-dark {
 		width:90%;
 	}
+
+	// intro________
+	.intro {
+
+	}
+
+	.intro-content {
+		flex-direction:column-reverse;
+		width:95%;
+	}
+
+	.intro-text {
+		padding-left:none;
+		padding-bottom:60px;
+	}
+
+	.intro-content div {
+		width:90%;
+
+	}
+
 }
 
-// from ipad to desktop
+
+
+
+
+
+// from ipad to desktop~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @media (min-width: 600px) {
-	// navigation____________________________________
+	// navigation____________
 	.desktop-nav {
 		display:none;
 	}
-	// hero__________________________________________
+	// hero___________
 	.hero {
 		// height:80vh;
 		justify-content:center;
@@ -451,8 +509,8 @@ input[type=submit] {
 		height:60%;
 		padding:30px 60px 30px 60px;
 		background-color:rgba(255,255,255,.95);
-
 	}
+
 	.highlights-all {
 		display: flex;
 		flex-direction: row;
@@ -482,6 +540,7 @@ input[type=submit] {
 	}
 }
 
+
 @media (min-width: 800px) {
 	.team-company-img {
 		max-height: 80px;
@@ -489,6 +548,9 @@ input[type=submit] {
 		margin: 40px;
 	}
 
+	.intro-content {
+		flex-direction:row;
+	}
 	.case_studies-content {
 		flex-direction: row;
 	}
@@ -509,18 +571,21 @@ input[type=submit] {
 	.case_studies-image {
 		width: 55%;
 	}
-
 }
 
-// desktop and above_________________________________
+// desktop and above~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @media (min-width: 1200px) {
-	// navigation____________________________________
+	// navigation_______________
 	.desktop-nav {
 		display:flex;
 
 	}
 
-	// hero__________________________________________
+	// hero______________
+	.hero {
+		justify-content:flex-start;
+
+	}
 
 	.hero-floating-box {
 		margin-right:120px;
@@ -533,10 +598,31 @@ input[type=submit] {
 		height:60%;
 		padding:30px 60px 30px 60px;
 		background-color:rgba(255,255,255,.95);
+		margin-left:240px;
 
+	}
+	
+	// intro_______________
+	.intro {
+		height:80vh;
+		background-image:url('assets/corner-animation.svg');
+		background-position:top right;
+		background-repeat:no-repeat;
 	}
 
 	.intro-content {
-		flex-direction: row;
+		width:80%;
+		max-width:1200px;
+		justify-content:space-between;
+		align-items:center;
+	}
+
+	.intro-image {
+		height:400px;
+		width:45%;
+	}
+
+	.intro-text {
+		width:45%;
 	}
 }
