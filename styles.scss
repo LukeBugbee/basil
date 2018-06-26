@@ -134,17 +134,38 @@ a, a:visited, a:hover, a:active {
 	justify-content: space-around;
 	align-items: center;
 	height: 100%;
+
+	.button {
+		margin-right: 0;
+		margin-left: 30px;
+	}
 }
 
 .nav-item {
 	margin-left:15px;
 	margin-right:15px;
+	padding: 28px 10px;
+	display: inline-block;
+
+	&.active {
+		color: $green;
+		position: relative;
+
+		// bottom line:
+		&::after {
+			content: '';
+			width: 110%;
+			bottom: 1px;
+			position: absolute;
+			display: block;
+			height: 3px;
+			transform: translateX(-17%);
+			position: absolute;
+			border-bottom: 3px solid $green;
+		}
+	}
 }
 
-.nav-item:last-of-type {
-	margin-right:0;
-	margin-left:30px;
-}
 // hero______________________________________________________________________________________________
 
 .hero {
@@ -578,7 +599,6 @@ input[type=submit] {
 	// navigation_______________
 	.desktop-nav {
 		display:flex;
-
 	}
 
 	// hero______________
