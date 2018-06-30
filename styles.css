@@ -91,6 +91,9 @@ a, a:visited, a:hover, a:active {
   align-items: center;
   border-bottom: 1px solid #d9d7e3; }
 
+.logo-nav {
+  display: inherit; }
+
 .navbar-content {
   display: flex;
   justify-content: space-between; }

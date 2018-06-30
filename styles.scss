@@ -120,6 +120,10 @@ a, a:visited, a:hover, a:active {
 	border-bottom: 1px solid $bg-dk;
 }
 
+.logo-nav {
+	display: inherit;
+}
+
 .navbar-content {
 	display:flex;
 	justify-content:space-between;
