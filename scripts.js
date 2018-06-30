@@ -12,12 +12,19 @@ $(function() {
       event.preventDefault();
       $('html, body').animate({
         scrollTop: linked.offset().top,
-        duration: 800,
+        duration: 800
       });
 
       history.replaceState({}, '', this.hash);
     }
   });
+
+  $('.logo-nav').click(function() {
+    $('html, body').animate({
+      scrollTop: 0,
+      duration: 800
+    });
+  })
 });
 
 // From https://davidwalsh.name/javascript-debounce-function
@@ -74,5 +81,5 @@ $(function() {
   }
 
   updateScrolledToTab();
-  $(window).scroll(debounce(updateScrolledToTab, 100));
+  $(window).scroll(debounce(updateScrolledToTab, 50));
 });
