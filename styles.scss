@@ -110,6 +110,7 @@ a, a:visited, a:hover, a:active {
 
 // navbar_____________________________________________________________________________________________
 .navbar {
+	z-index: 1;
 	height: 75px;
 	width: 100%;
 	background-color: white;
@@ -302,26 +303,30 @@ a, a:visited, a:hover, a:active {
 	}
 }
 // case studies______________________________________________________________________________________________
-.case_studies {
+.case-studies {
 	background-color: $bg-main;
 }
 
-.case_studies-content {
+.case-studies-content {
 	flex-direction: column;
 }
 
-.case_studies .column {
+.case-studies-content-area {
+	width: 80%;
+	margin-top: 0;
+}
+
+.case-studies .column {
 	width: 100%;
 	max-width: 100%;
+	align-items: center;
 }
 
-.case_studies-text {
-	padding: 100px;
+.case-studies-text {
 	text-align: left;
-	width: 100%;
 }
 
-.case_studies-text .btn-dark {
+.case-studies-text .btn-dark {
 	height: 40px;
 	width: 120px;
 	padding: 10px;
@@ -329,15 +334,17 @@ a, a:visited, a:hover, a:active {
 	margin-top: 20px;
 }
 
-.case_studies-image {
+.case-studies-image {
 	width: 100%;
 	overflow: hidden;
+    height: 100vw;
 }
 
-.case_studies-image img {
-	height: 1200px;
-    margin: -200px -100px -50px -220px;
+.case-studies-image img {
+    height: 115%;
+    margin: -20% -10% -5% -15%;
 }
+
 // contact______________________________________________________________________________________________
 .contact {
 	background-color: $bg-main;
@@ -511,8 +518,6 @@ input[type=submit] {
 
 
 
-
-
 // from ipad to desktop~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @media (min-width: 600px) {
 	// navigation____________
@@ -582,8 +587,20 @@ input[type=submit] {
 	.intro-content {
 		flex-direction:row;
 	}
-	.case_studies-content {
+
+	.case-studies .column {
+		align-items: flex-start;
+	}
+
+	.case-studies-content {
 		flex-direction: row;
+		height: 100vh;
+		align-items: flex-start;
+	}
+
+	.case-studies-content-area {
+		width: 80%;
+		margin-top: 10vw;
 	}
 
 	.contact-info-row {
@@ -595,12 +612,18 @@ input[type=submit] {
 		width: 49%;
   	}
 
-	.case_studies-text {
-		width: 45%;
+	.case-studies-text {
+		width: 40%;
 	}
 
-	.case_studies-image {
-		width: 55%;
+	.case-studies-image {
+		position: absolute;
+		height: 60vw;
+	}
+
+	.case-studies-image img {
+		height: 145%;
+		margin: -18% 0vh -5vw 27%;
 	}
 }
 
