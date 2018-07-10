@@ -8,7 +8,7 @@
 
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
-  color: #332e56;
+  color: #332E56;
   margin: 20px 0px;
   font-size: 50px; }
 
@@ -17,7 +17,7 @@ h3 {
 
 p {
   font-family: 'Lato', sans-serif;
-  color: #332e56; }
+  color: #332E56; }
 
 img {
   width: auto;
@@ -28,33 +28,33 @@ h1 {
 
 .button {
   width: 150px;
-  border: 1px solid #55cd99;
+  border: 1px solid #55CD99;
   padding-left: 30px;
   padding-right: 30px;
   height: 50px;
   line-height: 50px;
   text-align: center;
-  color: #55cd99;
+  color: #55CD99;
   font-weight: 400;
   transition: .3s ease;
   border-radius: 4px; }
 
 .button:hover {
-  background-color: #55cd99;
+  background-color: #55CD99;
   color: white; }
 
 .btn-primary {
-  background-color: #55cd99;
-  color: #332e56; }
+  background-color: #55CD99;
+  color: #332E56; }
 
 .btn-secondary {
-  background-color: #332e56;
-  color: #55cd99; }
+  background-color: #332E56;
+  color: #55CD99; }
 
 .btn-dark {
   padding: 20px;
   width: 50%;
-  background-color: #332e56;
+  background-color: #332E56;
   color: white;
   border-radius: 6px;
   transition: .25s ease; }
@@ -66,13 +66,13 @@ h1 {
 
 a, a:visited, a:hover, a:active {
   text-decoration: none;
-  color: #332e56; }
+  color: #332E56; }
 
 .row {
   display: flex;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   justify-content: center; }
 
 .column {
@@ -89,7 +89,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #d9d7e3; }
+  border-bottom: 1px solid #D9D7E3; }
 
 .logo-nav {
   display: inherit; }
@@ -116,7 +116,7 @@ a, a:visited, a:hover, a:active {
   padding: 28px 10px;
   display: inline-block; }
   .nav-item.active {
-    color: #55cd99;
+    color: #55CD99;
     position: relative; }
     .nav-item.active::after {
       content: '';
@@ -127,7 +127,7 @@ a, a:visited, a:hover, a:active {
       height: 3px;
       transform: translateX(-17%);
       position: absolute;
-      border-bottom: 3px solid #55cd99; }
+      border-bottom: 3px solid #55CD99; }
 
 .hero {
   background-color: #EEF0F3;
@@ -172,7 +172,7 @@ a, a:visited, a:hover, a:active {
 
 .intro {
   height: 80vh;
-  background-color: #f6f6f8;
+  background-color: #F6F6F8;
   background-image: url("assets/corner-animation.svg");
   background-position: top right;
   background-repeat: no-repeat; }
@@ -191,7 +191,7 @@ a, a:visited, a:hover, a:active {
   width: 45%; }
 
 .team {
-  background-color: #f6f6f8; }
+  background-color: #F6F6F8; }
 
 .team-content, .team-text,
 .team-companies, .team-companies-row {
@@ -215,7 +215,7 @@ a, a:visited, a:hover, a:active {
   margin: 10px; }
 
 .highlights {
-  background-color: #f6f6f8; }
+  background-color: #F6F6F8; }
 
 .highlights-content {
   flex-direction: column;
@@ -236,7 +236,7 @@ a, a:visited, a:hover, a:active {
     text-align: center; }
 
 .case_studies {
-  background-color: #f6f6f8; }
+  background-color: #F6F6F8; }
 
 .case_studies-content {
   flex-direction: column; }
@@ -266,7 +266,7 @@ a, a:visited, a:hover, a:active {
   margin: -200px -100px -50px -220px; }
 
 .contact {
-  background-color: #f6f6f8; }
+  background-color: #F6F6F8; }
 
 .contact-content {
   flex-direction: column;
@@ -288,7 +288,7 @@ input[type=text], input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid #332e56;
+  border: 1px solid #332E56;
   border-radius: 4px;
   box-sizing: border-box; }
 
@@ -296,14 +296,14 @@ input[type=text], input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid #332e56;
+  border: 1px solid #332E56;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical; }
 
 input[type=submit] {
   width: 100%;
-  background-color: #332e56;
+  background-color: #332E56;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -328,7 +328,7 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: gray; }
+  color: #808080; }
 
 .contact-us {
   margin: 10px; }
@@ -492,3 +492,5 @@ input[type=submit] {
 
   .intro-text {
     width: 45%; } }
+
+/*# sourceMappingURL=styles.css.map */
